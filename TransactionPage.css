@@ -1,0 +1,134 @@
+/* Main container styling */
+.transaction-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.transaction-page h1 {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+thead th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Subtotal display styling */
+.subtotal {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+  text-align: right;
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.add-product-button {
+  background-color: #28a745; /* Green */
+  margin-bottom: 15px;
+}
+
+.add-product-button:hover {
+  background-color: #218838;
+}
+
+/* Button container for action buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.finish-button {
+  background-color: #007bff; /* Blue */
+  flex: 1;
+  margin-right: 10px;
+}
+
+.finish-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  background-color: #dc3545; /* Red */
+  flex: 1;
+}
+
+.back-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .transaction-page {
+    padding: 15px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .finish-button,
+  .back-button {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,211 @@
+/* Main container styling */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./bg pemweb.png');
+  background-size: cover;
+  background-position: center;
+  color: #444; /* Warna teks lebih gelap untuk kontras */
+  font-family: 'Poppins', sans-serif; /* Mengganti font untuk tampilan modern */
+}
+
+/* Modal styling */
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95); /* Sedikit lebih transparan */
+  border-radius: 20px; /* Memperbesar border radius */
+  box-shadow: 0 12px 30px rgb(0, 0, 0); /* Bayangan lebih dalam */
+  padding: 40px; /* Menambah padding untuk ruang lebih */
+  max-width: 450px; /* Memperbesar lebar maksimal */
+  width: 90%; /* Menggunakan persentase untuk responsivitas */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animasi saat hover */
+}
+
+/* Modal hover effect */
+.modal:hover {
+  transform: translateY(-5px); /* Efek mengangkat saat hover */
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 32px; /* Ukuran teks logo lebih besar */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px !important;
+  height: auto !important;
+  margin-bottom: 25px !important;
+  margin-right: 5px !important; /* Margin-right tidak bisa diubah */
+  transform: scale(4.5) !important;
+}
+
+.logo img:hover {
+  transform: scale(5.0); /* Memperbesar logo saat hover */
+}
+
+/* Social button styling */
+.social-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none; /* Menghilangkan border default */
+  border-radius: 8px; /* Border radius yang lebih besar */
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative; /* Posisi untuk efek */
+  overflow: hidden; /* Menghilangkan overflow */
+  color: #fff; /* Warna teks putih untuk tombol */
+  transition: background-color 0.3s, transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.social-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Efek overlay */
+  transform: translateY(-100%); /* Menggeser efek di atas */
+  transition: transform 0.3s; /* Transisi untuk efek overlay */
+}
+
+.social-button:hover::after {
+  transform: translateY(0); /* Menampilkan efek saat hover */
+}
+
+.google-button {
+  background-color: #a72121; /* Warna Google */
+}
+
+.facebook-button {
+  background-color: #4267b2; /* Warna Facebook */
+}
+
+/* Registration and login buttons */
+.register-button, .login-button, .next-button, .back-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #4caf50; /* Warna tombol hijau */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+/* Same hover effect for all buttons */
+.register-button:hover, .login-button:hover, .next-button:hover, .back-button:hover {
+  background-color: #45a049; /* Warna lebih gelap saat hover */
+}
+
+/* Back button */
+.back-button {
+  background-color: #612723; /* Warna tombol kembali */
+  color: #ffffff;
+  margin-top: 15px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s !important; /* Transisi untuk efek hover */
+}
+
+.back-button:hover {
+  background-color: #e53935 !important; /* Warna lebih gelap saat hover */
+}
+
+/* Text and link styling */
+.error-text {
+  color: #f44336;
+  font-size: 15px; /* Ukuran font sedikit lebih besar */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.terms-text {
+  font-size: 13px;
+  color: #777; /* Warna teks gelap */
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link, .forgot-password-link {
+  font-size: 14px; /* Ukuran font sedikit lebih besar */
+  color: #0066cc; 
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.or-divider {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin: 15px 0;
+}
+
+.registration-title {
+  font-size: 24px; /* Ukuran judul lebih besar */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px; /* Jarak lebih banyak di bawah judul */
+}
+
+.char-count {
+  font-size: 13px;
+  color: #888;
+  float: right;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.registration-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.registration-form button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+  background-color: #45a049;
+}

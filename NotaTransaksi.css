@@ -1,0 +1,128 @@
+/* General wrapper */
+.nota-wrapper {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: linear-gradient(90deg, #519ed2, #355193);
+    text-align: center;
+  }
+  
+  /* Search bar outside of nota-container */
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  /* Nota container */
+  .nota-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .nota-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .nota-header p,
+  .nota-item p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  /* Nota item */
+  .nota-item {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .nota-total {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  /* Buttons outside of nota-container */
+  .nota-back,
+  .nota-print {
+    display: inline-block;
+    padding: 6px 10px; /* Reduce padding further */
+    font-size: 14px;
+    margin: 10px;
+    background-color: #00cf30;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 100px; /* Reduced minimum width */
+    max-width: 140px; /* Limit max width */
+  }
+  
+  .nota-back {
+    background-color: #e74c3c; /* Red for back button */
+  }
+  
+  .nota-print {
+    background-color: #2ecc71; /* Green for print button */
+  }
+  
+  /* Print notification overlay */
+  .print-notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .print-notification-content {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .print-notification-content p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .print-notification-content button {
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .print-notification-content .btn-transaksi-lain {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .print-notification-content .btn-selesai {
+    background-color: #2ecc71;
+    color: white;
+  }
+  

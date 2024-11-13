@@ -1,0 +1,107 @@
+/* Container styling */
+.capital-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9fa; /* Soft background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.capital-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+/* Calculate button styling */
+.calculate-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculate-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Display for the final capital */
+.final-display {
+  margin: 20px 0;
+  font-size: 1.2em;
+  text-align: center;
+  color: #28a745;
+}
+
+/* Action buttons styling */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.back-button,
+.save-button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+.back-button {
+  background-color: #dc3545; /* Red for back button */
+}
+
+.back-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.save-button {
+  background-color: #28a745; /* Green for save button */
+}
+
+.save-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

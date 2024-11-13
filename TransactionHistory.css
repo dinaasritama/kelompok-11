@@ -1,0 +1,163 @@
+/* src/components/TransactionHistory.css */
+
+/* Style for search input */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Adjusted to move search further down */
+    margin-bottom: 30px; /* Increased space below search bar */
+  }
+  
+  .search-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Notification */
+  .notification {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Main container for transaction history */
+  .transaction-history-container {
+    width: 70%; /* Reduced width to make it more centered */
+    max-width: 800px;
+    margin: 40px auto; /* More margin on top and bottom for better centering */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .transaction-history-header {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for transaction table */
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .transaction-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .no-transactions-message {
+    margin-top: 20px;
+    font-style: italic;
+    color: #888;
+  }
+  
+  /* Style for delete button */
+  .delete-button {
+    padding: 6px 12px;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Delete confirmation overlay */
+  .delete-confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .delete-confirmation {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .confirm-button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #2ecc71;
+  }
+  
+  .cancel-button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Style for action buttons (Back and Print PDF) */
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .action-buttons button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin to separate buttons */
+  }
+  
+  .back-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .back-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .pdf-button {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .pdf-button:hover {
+    background-color: #27ae60;
+  }
+  

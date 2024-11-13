@@ -1,0 +1,49 @@
+.transaction-container {
+    max-width: 600px;
+    margin: 0 auto; /* Memusatkan kontainer */
+    padding: 20px;
+    background-color: #f4f4f4; /* Latar belakang yang cerah */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  }
+  
+  h2 {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    color: #333; /* Warna teks */
+  }
+  
+  .transaction-button {
+    background-color: #48ba48; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 10px 15px; /* Spasi dalam tombol */
+    border: none; /* Tanpa garis batas */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Menunjukkan kursor tangan saat hover */
+    font-size: 16px; /* Ukuran font tombol */
+    width: 100%; /* Lebar tombol 100% */
+    margin: 10px 0; /* Spasi vertikal antar tombol */
+  }
+  
+  .transaction-button:hover {
+    background-color: #45a049; /* Mengubah warna latar saat hover */
+  }
+  
+  .capital-form {
+    margin-top: 20px; /* Spasi atas untuk form modal */
+  }
+  
+  .capital-form label {
+    display: block; /* Membuat label berada di atas input */
+    margin-bottom: 5px; /* Spasi antara label dan input */
+    font-weight: bold; /* Teks label menjadi tebal */
+  }
+  
+  .capital-form input {
+    width: 100%; /* Mengatur lebar input 100% */
+    padding: 10px; /* Spasi dalam input */
+    border: 1px solid #ccc; /* Garis batas abu-abu */
+    border-radius: 4px; /* Sudut membulat */
+    font-size: 16px; /* Ukuran font */
+    margin-bottom: 10px; /* Spasi bawah untuk input modal */
+  }
+  

@@ -1,0 +1,234 @@
+/* Outer Container for Colored Side Borders */
+.outer-container {
+    background-color: #0a325b; /* Desired border color */
+    padding: 20px; /* Width of the "side border" */
+}
+
+/* Container and Header Styling */
+.menu-container {
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background: linear-gradient(90deg, #203d50,rgb(44, 50, 58));
+    box-shadow: 0 2px 10px rgba(222, 217, 217, 0.986);
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 2px solid #9a981e;
+    background: linear-gradient(90deg, #519ed2, #0d255b);
+    color: rgb(0, 0, 0); /* Changed to white */
+    margin-bottom: 20px; /* Added margin to create spacing */
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transform: scale(0.6);
+}
+
+.logo-gambar {
+    width: 100px ;
+    height: 70px ;
+    margin-bottom: 5px ;
+    margin-right: 80px ;
+    transition: transform 0.3s ;
+    transform: scale(1.5) ;
+    position: relative ; /* or 'absolute' if needed */
+    top: 20px ; /* Moves the element down */
+}
+
+
+.nav-bar {
+    display: flex;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #b41a1a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Develop Experiences Section */
+.develop-experiences-section {
+    text-align: center;
+    padding: 40px;
+    background-image: url('develop.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.develop-experiences-section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.develop-experiences-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.develop-experiences-section p {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Main Title Styling */
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Content Wrapper */
+.content {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex: 3;
+}
+
+/* Menu Icon Size */
+.menu-icon {
+    width: 40px; /* Increased width */
+    height: 40px; /* Increased height */
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.menu-button {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #519ed2, #274094);
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(10, 73, 167, 0.932);
+}
+
+.menu-button img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-button-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #151515;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    border-right: 2px solid #1a2c5f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(90deg, #519ed2, #274094);
+    border-radius: 8px;
+}
+
+/* Profile Picture Container */
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2f80d2;
+    color: #fefefe;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    text-align: left;
+}
+
+.sidebar-button:hover {
+    background-color: #ced4da;
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .menu-buttons {
+        justify-content: flex-start;
+    }
+}
